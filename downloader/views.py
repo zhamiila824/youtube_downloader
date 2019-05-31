@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Link
+from .models import Request
 from .forms import LinkForm
 import youtube_dl
 
@@ -9,7 +9,7 @@ def home_view(request):
         form = LinkForm(request.POST)
         if form.is_valid():
             youtubeUrl = form.cleaned_data.get('url')
-            url = Link(url=youtubeUrl)
+            url = Request(url=youtubeUrl)
             url.save()
             options = {
                 'format': 'bestaudio/best',

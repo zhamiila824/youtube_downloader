@@ -1,4 +1,7 @@
 from django.contrib import admin
-from .models import Link
+from .models import Request
 
-admin.site.register(Link)
+class HistoryAdmin(admin.ModelAdmin):
+    readonly_fields = ("url", 'date')
+
+admin.site.register(Request, HistoryAdmin)

@@ -1,9 +1,9 @@
 from django.db import models
-from django.utils import timezone
 
-class Link(models.Model):
+
+class Request(models.Model):
     url = models.URLField(max_length=400)
-    date = models.DateTimeField(default=timezone.now())
+    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         if self.url == None:

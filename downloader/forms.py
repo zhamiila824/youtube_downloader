@@ -1,13 +1,11 @@
 from django import forms
-from .models import Link
+from .models import Request
 
 class LinkForm(forms.Form):
-    url = forms.URLField(widget=forms.TextInput(attrs={
-        'placeholder': 'Enter url video from youtube.com'
-    }))
+    url = forms.RegexField(regex=r'^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$')
 
     class Meta:
-        model = Link
+        model = Request
         fields = [
             'url'
         ]
