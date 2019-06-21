@@ -11,7 +11,7 @@ $ pip install -r requirements.txt
 $ python manage.py runserver
 ```
 
-Before running serever:
+Before running server:
 1) create .env file with:
 
   SECRET_KEY='your-secret-key'
