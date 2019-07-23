@@ -16,10 +16,8 @@ Before running server:
 
   SECRET_KEY='your-secret-key'
 
-2) make migrations:
+2) make migration:
 ```
-$ python manage.py makemigrations
-$ python manage.py migrate
 $ python manage.py sqlmigrate downloader 0001
 ```
 3) create superuser(to see admin page):
