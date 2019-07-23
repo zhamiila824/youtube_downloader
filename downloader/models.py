@@ -6,6 +6,6 @@ class Request(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        if self.url == None:
+        if self.url is None:
             return "URL IS NULL"
         return self.url
