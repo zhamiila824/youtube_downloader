@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Downloader</title>
+    <style type="text/css">
+        body{
+            background-color: bisque;
+            font-family: sens-serif, serif;
+            text-align: center;
+        }
+        form{
+            border: darkgray solid 1px;
+            padding: 10px;
+            width: 420px;
+            margin: auto;
+        }
+        input{
+            font-family: sens-serif, serif;
+            text-align: center;
+            background-color: lightgray;
+            height: 50px;
+            width: 350px;
+            font-size: 25px;
+            margin: 5px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
 </head>
 <body>
+<h1>Please paste youtube link to download mp3</h1>
 <form action="" method="post">
     {%  csrf_token %}
     {{ form }}
