@@ -3,7 +3,7 @@
 # Installation and run
 From you command line:
 ```
-$ git clone https://github.com/jamilya824/youtube_downloader.git
+$ git clone https://github.com/zhamiila824/youtube_downloader.git
 $ virtualenv venv -p python3
 $ source venv/bin/activate
 $ cd youtube_downloader
