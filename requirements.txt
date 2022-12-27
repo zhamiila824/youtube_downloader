@@ -4,4 +4,4 @@ sqlparse==0.3.0
 youtube-dl==2019.7.16
 pip==19.0.3
 pytz==2019.1
-setuptools==40.8.0
+setuptools==65.5.1
